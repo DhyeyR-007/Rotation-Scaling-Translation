@@ -17,3 +17,4 @@ newgeom=rect.vertices;
 patch(rect,'vertices',newgeom,'faceColor',[0.6 0 0.2]) ;
 newgeom2=rect.vertices*R;
 patch(rect,'vertices',newgeom2,'faceColor','none') ;
+
