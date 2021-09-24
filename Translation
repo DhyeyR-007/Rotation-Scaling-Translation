@@ -1,0 +1,18 @@
+axis([-1 10 -1 10])
+x1=input('enter the value of x1 cordinates ');
+y1=input('enter the value of y1 cordinates ');
+x2=input('enter the value of x2 cordinates ');
+y2=input('enter the value of y2 cordinates ');
+x3=input('enter the value of x3 cordinates ');
+y3=input('enter the value of y3 cordinates ');
+x4=input('enter the value of x4 cordinates ');
+y4=input('enter the value of y4 cordinates ');
+tx=input(' enter the value of tx ');
+ty=input('enter the value of ty ');
+T=[ 1 0 0;0 1 0;tx ty 1];
+rect.vertices=[x1 y1 1;x2 y2 1;x3 y3 1;x4 y4 1];
+newgeom=rect.vertices;
+rect.faces=[1 2 3 4];
+patch(rect,'vertices',newgeom,'faceColor',[0.6 0 0.9]);
+newgeom2=rect.vertices*T;
+patch(rect,'vertices',newgeom2,'faceColor',[0.5 0.6 0.8]);
